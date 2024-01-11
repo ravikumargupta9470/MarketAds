@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
+ <a href="<?php echo base_url().'index.php/users/show/'.$uid ;  ?>" style="text-decoration: none;color: #00050a;">
+
+ 	   <?php if($r==null) :
+   	echo "<div class='alert alert-dismissible alert-warning' style='text-align:center;'>
+  <button type='button' class='close' data-dismiss='alert'>&times;</button>
+  <h4 class='alert-heading'>Warning!</h4>
+  <p class='mb-0'>no data found.</p>
+</div>";?>
+   	<?php else: ?>
+<?php foreach($r as $re):  ?>
